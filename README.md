@@ -1,3 +1,12 @@
+Rock, Paper, Scissors 
+
+A VanillaJS and ReactJS version of the classic two-player game.
+
+
+
+------------------------------------------------------------
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
