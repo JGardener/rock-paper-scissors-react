@@ -1,0 +1,31 @@
+.scoreboard-div {
+  margin: 20px auto;
+  border: 3px solid #fff;
+  border-radius: 4px;
+  width: 200px;
+  font-size: 46px;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.scoreboard-div > p {
+  font-size: 1rem;
+}
+
+#user-label {
+  position: absolute;
+  top: 2rem;
+  left: -25px;
+}
+
+#rival-label {
+  position: absolute;
+  top: 2rem;
+  right: -25px;
+}
+
+.badge {
+  font-size: 1rem;
+  background: #e25840;
+  padding: 2px 10px;
+}
