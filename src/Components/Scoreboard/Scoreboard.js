@@ -1,21 +1,23 @@
 import React from "react";
 import "./Scoreboard.css";
 
-function Scoreboard() {
+const Scoreboard = ({ playerScore, rivalScore, gamesPlayed }) => {
   return (
-    <div className="scoreboard-div">
-      <div id="user-label" className="badge">
+    <div className="scoreboard">
+      <div className={`you ${playerScore > rivalScore ? "winning" : ""}`}>
         You
       </div>
-      <div id="rival-label" className="badge">
+      <div className="score">
+        <span className="userScore">{playerScore}</span>
+        <span> : </span>
+        <span className="rivalScore">{rivalScore}</span>
+      </div>
+      <div className={`rival ${playerScore < rivalScore ? "winning" : ""}`}>
         Rival
       </div>
-      <span id="user-score">0 </span>: <span id="rival-score">0</span>
-      <p>
-        Games played: <span id="games-played">0</span>
-      </p>
+      <span className="games-played">Games played: {gamesPlayed}</span>
     </div>
   );
-}
+};
 
 export default Scoreboard;

@@ -1,0 +1,20 @@
+.choice {
+  display: inline-block;
+  border: 4px solid #fff;
+  border-radius: 50%;
+  margin: 20px 20px;
+  padding: 2rem;
+  color: #00f9ad;
+}
+
+.playerChoice {
+  border-color: green;
+}
+
+.rivalChoice {
+  border-color: red;
+}
+
+.playerChoice.rivalChoice {
+  border-color: orange;
+}
