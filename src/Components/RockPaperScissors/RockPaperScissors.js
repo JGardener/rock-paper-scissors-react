@@ -49,8 +49,8 @@ class RockPaperScissors extends React.Component {
       newState.rivalScore = this.state.rivalScore + 1;
     }
 
-    this.setState(newState);
     newState.gamesPlayed = this.state.gamesPlayed + 1;
+    this.setState(newState);
   };
 
   generateRivalChoice = () => {
@@ -71,9 +71,8 @@ class RockPaperScissors extends React.Component {
           gamesPlayed={this.state.gamesPlayed}
         />
         <h2>Please make a choice.</h2>
-        {this.state.lastOutcome && (
-          <div className="last-outcome">{this.state.lastOutcome}</div>
-        )}
+        <div className="last-outcome">{this.state.lastOutcome}</div>
+
         <Choices
           lastPlayerChoice={this.state.lastPlayerChoice}
           lastRivalChoice={this.state.lastRivalChoice}
