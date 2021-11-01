@@ -1,8 +1,6 @@
 Rock, Paper, Scissors 
 
-A VanillaJS and ReactJS version of the classic two-player game.
-
-
+The classic two-player game pits you against an AI.
 
 ------------------------------------------------------------
 
